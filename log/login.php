@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('conection.php');
+include('../bd/conection.php');
 
 if (empty($_POST['login']) || empty($_POST['senha'])) {
     header('location: index.php');
@@ -32,13 +32,13 @@ try {
 
 if ($usuario == $bancologin && $senha == $bancosenha) {
     $_SESSION['Login'] = $usuario;
-    header('location: user.php');
+    header('location: ../usuario/usuario.php');
     exit();
 } else {
     $_SESSION['nao_autenticado'] = true;   
     unset($_SESSION['Login']);
     session_destroy();
-    header('location:index.php');
+    header('location:../index.php');
     exit();
 }
 

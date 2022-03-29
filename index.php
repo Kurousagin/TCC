@@ -24,7 +24,7 @@ session_start();
 
     <div class="login-box">
         <h2>Connect Student</h2>
-        <form action="login.php" method="POST">
+        <form action="log/login.php" method="POST">
 
             <div class="user-box">
 
