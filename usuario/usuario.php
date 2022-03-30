@@ -1,5 +1,3 @@
-
-
 <?php
 
 include('../log/validar.php');
@@ -15,6 +13,7 @@ include('../log/validar.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area usuario</title>
     <link rel="stylesheet" type="text/css" href="../css/user.css">
+
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
@@ -28,44 +27,44 @@ include('../log/validar.php');
                 <div class="perfil-usuario-avatar">
                     <img src="" alt="img-avatar">
                     <button type="button" class="boton-avatar">
-                        <i class="far fa-image"></i>
+                        <a   href="" ></a> 
                     </button>
                 </div>
-                <button type="button" class="boton-portada">
-                    <i class="far fa-image"></i> trocar imagem
+                <button class="boton-portada" onclick="window.location.href = '#'">trocar imagem</button>
+                    
+                </button>
+                <button  onclick="window.location.href = '#'" class="boton-por">
+                    editar perfil
                 </button>
             </div>
         </div>
         <div class="perfil-usuario-body">
+
             <div class="perfil-usuario-bio">
-                <h3 class="titulo">Olá, <?php echo $_SESSION['Login']; ?>.</br> Bem vindo à area de usuario</h3>
-                <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="perfil-usuario-footer">
+                <h3 class="titulo"><?php echo $_SESSION['Login']; ?></h3>
+              
+            
+
+           
                 <ul class="lista-datos">
-                    <li><i class="icono fas fa-map-signs"></i>Localização:</li>
-                    <li><i class="icono fas fa-phone-alt"></i> Telefone:</li>
-                    <li><i class="icono fas fa-briefcase"></i> Estuda em:</li>
-                    
+                    <li><a   href="" class="icono fas fa-map-signs"></a> Localização:</li>
+                    <li><a   href="" class="icono fas fa-phone-alt"></a>  Telefone:</li>
+                    <li><a   href="" class="icono fas fa-briefcase"></a>  Estuda em:</li>
+
                 </ul>
                 <ul class="lista-datos">
-                    <li><i class="icono fas fa-map-marker-alt"></i> Ubicacion.</li>
-                    <li><i class="icono fas fa-calendar-alt"></i> Fecha nacimiento.</li>
-                    <li><i class="icono fas fa-user-check"></i> Registro.</li>
-                    <li><i class="icono fas fa-share-alt"></i> Redes sociales.</li>
+                    <li><a   href="" class="icono fas fa-map-marker-alt"></a>  Ubicacion.</li>
+                    <li><a   href="" class="icono fas fa-calendar-alt"></a>  Fecha nacimiento.</li>
+                    <li><a   href="" class="icono fas fa-user-check"></a>  Registro.</li>
+                    <li><a   href="" class="icono fas fa-share-alt"></a>  Redes sociales.</li>
                 </ul>
             </div>
-            <div class="logoutin">
-                <a href="../log/logout.php" class="boton-redes ">Home</a>
-                <a href="../log/logout.php" class="boton-redes ">Grupos</a>
-                <a href="../log/logout.php" class="boton-redes ">premium</a>
-                <a href="../log/logout.php" class="boton-redes ">editar</a>
-                <a href="../log/logout.php" class="boton-redes ">sair</a>
-            </div>
-        </div>
+            <a href="../index.php">sair</a>
+
+          
+            
     </section>
- 
+
 </body>
 
 </html>
