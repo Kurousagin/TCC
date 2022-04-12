@@ -3,7 +3,7 @@ session_start();
 include('../bd/conection.php');
 
 if (empty($_POST['login']) || empty($_POST['senha'])) {
-    header('location: index.php');
+    header('location: ../index.php');
     exit();
 }
 
