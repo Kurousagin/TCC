@@ -1,3 +1,9 @@
+<?php
+include('../menu/menu.php');
+include('../log/validar.php');
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
